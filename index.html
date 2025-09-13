@@ -86,6 +86,51 @@
             width: 24px;
             height: 24px;
         }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            text-align: center;
+            z-index: 3;
+            border-top: 1px solid rgba(63, 81, 181, 0.3);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-link {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #3f51b5;
+        }
+
+        .footer-text {
+            color: #888;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .footer-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -106,6 +151,18 @@
             Open in Browser
         </a>
     </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="terms.html" class="footer-link">Terms of Service</a>
+            <a href="mailto:flashapps59@gmail.com" class="footer-link">Contact Us</a>
+            <a href="mailto:flashapps59@gmail.com" class="footer-link">Support</a>
+            <a href="about.html" class="footer-link">About</a>
+        </div>
+        <p class="footer-text">&copy; 2025 Flash Apps. All rights reserved. | Made with ❤️ for professionals worldwide</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
