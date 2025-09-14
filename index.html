@@ -16,7 +16,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: radial-gradient(ellipse at center, #2c2c2c 0%, #1a1a1a 70%, #000000 100%);
+            background: #000000;
             margin: 0;
             color: #fff;
             min-height: 100vh;
@@ -26,16 +26,6 @@
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
             touch-action: manipulation;
-        }
-
-        #particle-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
         }
 
         .container {
@@ -59,18 +49,6 @@
                 height: 80px;
                 margin-right: 20px;
                 border-radius: 12px;
-                animation: logoRotate90 3s ease-in-out infinite;
-                transition: transform 0.3s ease;
-            }
-            
-            .logo:hover {
-                transform: scale(1.05) rotate(180deg);
-            }
-            
-            @keyframes logoRotate90 {
-                0% { transform: rotate(0deg); }
-                50% { transform: rotate(90deg); }
-                100% { transform: rotate(0deg); }
             }        @keyframes gentleFloat {
             0%, 100% { transform: translateY(0) scale(1); }
             50% { transform: translateY(-8px) scale(1.02); }
@@ -480,7 +458,6 @@
     </style>
 </head>
 <body>
-    <canvas id="particle-canvas"></canvas>
     <div class="container">
         <img src="logo1.png" alt="Resume-Grok Logo" class="logo">
                         <h1 class="main-title">
@@ -580,6 +557,5 @@
         <p class="footer-text">&copy; 2025 Flash Apps. All rights reserved. | Made with ❤️ for professionals worldwide</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
