@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Resume-Grok - Your Resume Companion</title>
+    <title>Resume-Pilot - Your Resume Companion</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
         
@@ -16,7 +16,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: #000000;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
             margin: 0;
             color: #fff;
             min-height: 100vh;
@@ -38,11 +38,12 @@
             min-height: 100vh;
             min-height: 100dvh; /* Dynamic viewport height for mobile */
             padding: 3rem 2rem;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+            background: linear-gradient(180deg, rgba(59, 130, 246, 0.05) 0%, rgba(37, 99, 235, 0.1) 50%, rgba(29, 78, 216, 0.15) 100%);
             text-align: center;
             width: 100%;
             box-sizing: border-box;
         }
+
 
             .logo {
                 width: 80px;
@@ -93,16 +94,16 @@
             display: flex;
             align-items: center;
             padding: 1rem 1.5rem;
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(32, 32, 32, 0.6));
-            color: #e0e0e0;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.3));
+            color: #e0e8ff;
             border-radius: 15px;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 500;
             transition: all 0.3s ease;
-            border: 1px solid rgba(128, 128, 128, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.3);
             backdrop-filter: blur(15px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
             white-space: nowrap;
             position: relative;
             overflow: hidden;
@@ -132,24 +133,24 @@
         
         @keyframes linkPulse {
             0% { 
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(224, 224, 224, 0.3);
+                box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2), 0 0 0 0 rgba(59, 130, 246, 0.4);
                 transform: scale(1);
             }
             50% { 
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 0 8px rgba(224, 224, 224, 0);
+                box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2), 0 0 0 8px rgba(59, 130, 246, 0);
                 transform: scale(1.02);
             }
             100% { 
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(224, 224, 224, 0);
+                box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2), 0 0 0 0 rgba(59, 130, 246, 0);
                 transform: scale(1);
             }
         }
 
         .link:hover {
-            background: linear-gradient(135deg, rgba(16, 16, 16, 0.9), rgba(48, 48, 48, 0.7));
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(37, 99, 235, 0.4));
             transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 8px 35px rgba(0, 0, 0, 0.5);
-            border-color: rgba(128, 128, 128, 0.4);
+            box-shadow: 0 8px 35px rgba(59, 130, 246, 0.3);
+            border-color: rgba(59, 130, 246, 0.5);
             color: #ffffff;
         }
 
@@ -217,8 +218,8 @@
         }
 
         .feature-card {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(32, 32, 32, 0.4));
-            border: 1px solid rgba(128, 128, 128, 0.2);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.15));
+            border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: 20px;
             padding: 2.5rem 2rem;
             text-align: center;
@@ -229,7 +230,7 @@
             animation: fadeInUp 0.8s ease forwards;
             opacity: 0;
             transform: translateY(30px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(59, 130, 246, 0.1);
         }
         
         .feature-card:nth-child(1) { animation-delay: 0.1s; }
@@ -261,9 +262,9 @@
 
         .feature-card:hover {
             transform: translateY(-12px) scale(1.02);
-            border-color: rgba(128, 128, 128, 0.4);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            background: linear-gradient(135deg, rgba(16, 16, 16, 0.8), rgba(48, 48, 48, 0.6));
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.2));
         }
 
             .feature-icon {
@@ -271,7 +272,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: #ffffff;
+                color: #93c5fd;
                 transition: all 0.3s ease;
             }
             
@@ -285,7 +286,8 @@
             
             .feature-card:hover .feature-icon svg {
                 transform: scale(1.2) rotate(10deg);
-                filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+                filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.6));
+                color: #60a5fa;
             }
             
             @keyframes iconFloat {
@@ -459,9 +461,9 @@
 </head>
 <body>
     <div class="container">
-        <img src="logo1.png" alt="Resume-Grok Logo" class="logo">
+        <img src="logo1.png" alt="Resume-Pilot Logo" class="logo">
                         <h1 class="main-title">
-                    <span class="typing-text" data-text="Resume-Grok">Resume-Grok</span>
+                    <span class="typing-text" data-text="Resume-Pilot">Resume-Pilot</span>
                 </h1>
         
         <div class="download-links">
